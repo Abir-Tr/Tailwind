@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Tailwind</title>
+</head>
+<body>
+    <header>
+    <nav class="bg-stone-600">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <!--
+                  Icon when menu is closed.
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <!--
+                  Icon when menu is open.
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-5">
+                <a></a>
+                  <a href="#Home" class="rounded-md bg-orange-700 px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a>
+                  <a href="Blog" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-orange-700 hover:text-white">Blog</a>
+                  <a href="#Project" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-orange-700 hover:text-white">Project</a>
+                  <a href="#About-us" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-orange-700 hover:text-white">About-us</a>
+                
+                  <a href="#Contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-orange-700 hover:text-white">Contact</a>
+                </div>
+              </div>
+            </div>
+           
+            <div class="relative ml-3">
+                <div>
+                  <button type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                    <span class="absolute -inset-1.5"></span>
+                    <span class="sr-only">Open user menu</span>
+                    <img class="size-8 rounded-full" src="images (7).jpg" alt="icon home deco">
+                  </button>
+                </div>
+      
+<!--                 
+                  Dropdown menu, show/hide based on menu state.
+      
+                  Entering: "transition ease-out duration-100"
+                    From: "transform opacity-0 scale-95"
+                    To: "transform opacity-100 scale-100"
+                  Leaving: "transition ease-in duration-75"
+                    From: "transform opacity-100 scale-100"
+                    To: "transform opacity-0 scale-95" -->
+               
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="#Home" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Home</a>
+            <a href="#Blog" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Blog</a>
+            <a href="#About-us" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About-us</a>
+            <a href="#Contact" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section class="Home flex justify-center items-center">
+            <a name="Home"></a>
+  <div class="h-full min-w-full bg-orange-100/15">
+    <h1 class="font-amen text-center">Hi everyone <br> I'm here to guide you to create magic in your space </h1>
+            <h1 class="text-center">Bringing beauty & enjoyment <br>to everyday living </h1>
+          </div> 
+        </section>
+            <section class="Blog">
+              <a name="Blog"></a>
+              <div class="row-auto">
+                <h2 class="text-center mt-14">How to find your decorating style</h2>
+              </div>
+              <div class="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4  gap-4 justify-items-center ml-12">
+                <img src="../img/download (1).jpg" alt="Image 1" class="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full object-cover  ">
+                <img src="../img/download (2).jpg" alt="Image 2" class="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48  rounded-full object-cover ">
+                <img src="../img/images (1).jpg" alt="Image 3" class="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full object-cover ">
+                <img src="../img/images (2).jpg" alt="Image 4" class="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48  rounded-full object-cover">
+              </div>
+          
+            </section>
+
+            <section class="Project mt-28 bg-abir ">
+              <a name="Project"></a>
+             <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+  <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="../img/5e123327ec7cf9e9e26c641c04c434fd.jpg" alt="">
+  <div class="flex flex-col justify-between p-4 leading-normal">
+      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+  </div>
+</a>       
+</section> 
+
+<section class="About-us mt-28 bg-abir">
+  <a name="About-us"></a>
+
+  <div class="flex justify-center ">
+    <div class=" flex justify-centercol-span-12 sm:col-span-12 lg:col-span-6 gap-4 ">
+   <img src="../img/5e123327ec7cf9e9e26c641c04c434fd.jpg" alt="Image 2" class="w-36 h-40 object-cover rounded-lg">
+   <div class="text-center">
+    <h2 class="text-xl font-semibold mb-4">Titre de la description</h2>
+    <p class="text-sm">Voici une description qui se trouve au centre entre les deux images. Elle peut contenir du texte explicatif ou des informations supplémentaires.</p>
+  </div>
+   <img src="../img/ae95291a0d158b01f1487d391866d438.jpg" alt="Image 3" class="w-36 h-40 object-cover rounded-lg">
+  </div>
+  </div>
+</section>
+
+ <section class="Contact mt-28 bg-orange-700" >
+  <a name="Contact"></a>
+  <form class="w-full max-w-sm">
+    <div class="md:flex md:items-center mb-6">
+      <div class="md:w-1/3">
+        <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
+          Full Name
+        </label>
+      </div>
+      <div class="md:w-2/3">
+        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="Jane Doe">
+      </div>
+    </div>
+    <div class="md:flex md:items-center mb-6">
+      <div class="md:w-1/3">
+        <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-password">
+          Password
+        </label>
+      </div>
+      <div class="md:w-2/3">
+        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-password" type="password" placeholder="******************">
+      </div>
+    </div>
+    <div class="md:flex md:items-center mb-6">
+      <div class="md:w-1/3"></div>
+      <label class="md:w-2/3 block text-gray-500 font-bold">
+        <input class="mr-2 leading-tight" type="checkbox">
+        <span class="text-sm">
+          Send me your newsletter!
+        </span>
+      </label>
+    </div>
+    <div class="md:flex md:items-center">
+      <div class="md:w-1/3"></div>
+      <div class="md:w-2/3">
+        <button class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+          Sign Up
+        </button>
+      </div>
+    </div>
+  </form>
+ </section>           
+
+      
+
+        
+
+    </main>
+    <footer class=" bg-gray-800 text-white py-8 mt-28">
+      
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <a class="fa fa-snapchat-ghost" target="_blank" href="https://www.snapchat.com/fr-FR"></a>
+            <a class="fa fa-instagram" target="_blank" href="https://www.instagram.com/"></a>
+            <a class="fa fa-facebook "target= "_blank" href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Dfr_FR"></a>
+          </div>
+          <div class="col-sm-12 col-md-6 mt-2">
+        <p class="text-center mt-0 mt-md-4">&copy; 2024 [Deco & Lifestyle] . All rights reserved. </p>
+      </div>
+      </div>
+    </div>
+     
+    </footer>
+</body>
+</html>
