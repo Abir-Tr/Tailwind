@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Tailwind</title>
 </head>
 <body>
@@ -38,12 +39,13 @@
               <div class="hidden sm:ml-6 sm:block">
                 <div class="flex space-x-5">
                 <a></a>
-                  <a href="#Home" class="rounded-md bg-orange-700 px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a>
-                  <a href="Blog" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-orange-700 hover:text-white">Blog</a>
-                  <a href="#Project" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-orange-700 hover:text-white">Project</a>
-                  <a href="#About-us" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-orange-700 hover:text-white">About-us</a>
+                <p class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white">BLOG-DECO</p>
+                  <a href="#Home" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-stone-500 hover:text-white">Home</a>
+                  <a href="#Featured-Posts" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-stone-500 hover:text-white">Featured-Posts</a>
+                  <a href="#Category" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-stone-500 hover:text-white">Category</a>
+                  <a href="#Latest-Posts" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-stone-500 hover:text-white">Latest-Posts</a>
                 
-                  <a href="#Contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-orange-700 hover:text-white">Contact</a>
+                  <a href="#Contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-stone-500 hover:text-white">Contact</a>
                 </div>
               </div>
             </div>
@@ -71,15 +73,17 @@
               </div>
             </div>
           </div>
-        </div>
+       
       
         <!-- Mobile menu, show/hide based on menu state. -->
         <div class="sm:hidden" id="mobile-menu">
           <div class="space-y-1 px-2 pb-3 pt-2">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="#Home" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Home</a>
-            <a href="#Blog" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Blog</a>
-            <a href="#About-us" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About-us</a>
+            <p class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white">BLOG-DECO</p>
+            <a href="#Home" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-orange-700 hover:text-white">Home</a>
+            <a href="#Featured-Posts" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Featured-Posts</a>
+            <a href="#Category" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Category</a>
+            <a href="#Latest-Posts" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Latest-Posts</a>
             <a href="#Contact" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
           </div>
         </div>
@@ -88,53 +92,127 @@
     <main>
         <section class="Home flex justify-center items-center">
             <a name="Home"></a>
-  <div class="h-full min-w-full bg-orange-100/15">
-    <h1 class="font-amen text-center">Hi everyone <br> I'm here to guide you to create magic in your space </h1>
-            <h1 class="text-center">Bringing beauty & enjoyment <br>to everyday living </h1>
+  <div class="h-full min-w-full bg-orange-100/10">
+    <h1 class="font-amen text-center items-center text-7xl mt-16 hover:text-nude">Deco & Lifestyle</h1>
           </div> 
         </section>
-            <section class="Blog">
-              <a name="Blog"></a>
+            <section class="Featured-Posts">
+              <a name="Featured-Posts"></a>
               <div class="row-auto">
-                <h2 class="text-center mt-14">How to find your decorating style</h2>
+                <h2 class="text-center mt-12 mb-10 text-4xl">How To Find Your Decorating Style</h2>
               </div>
               <div class="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4  gap-4 justify-items-center ml-12">
-                <img src="../img/download (1).jpg" alt="Image 1" class="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full object-cover  ">
-                <img src="../img/download (2).jpg" alt="Image 2" class="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48  rounded-full object-cover ">
-                <img src="../img/images (1).jpg" alt="Image 3" class="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full object-cover ">
-                <img src="../img/images (2).jpg" alt="Image 4" class="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48  rounded-full object-cover">
+                <div>
+                  <img src="../img/ee65372b06608d96341e02325f1ff925.jpg" alt="Image 1" class="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full object-cover ml-10 md:ml-0 ">
+              
+                  <h1 class="ml-10  text-orange-950 text-xl underline">Living-Room</h1>
+              <h3 >Lorem ipsum dolor sit amet <br>consectetur, adipisicing elit. </h3>
+            
+                </div>
+                <div>
+                <img src="../img/c50fb43b2e90074b6cc4e3b17c80c921.jpg" alt="Image 2" class="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48  rounded-full object-cover ml-10 md:ml-0 ">
+                <h1 class="ml-10 text-orange-950 text-xl underline">Bath-Room</h1>
+                <h3>Lorem ipsum dolor sit amet <br> consectetur, adipisicing elit. </h3>
               </div>
-          
+              <div>
+                <img src="../img/32e5734faf1cce7b9eb15cf2ec39028e.jpg" alt="Image 3" class="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full object-cover ml-10 md:ml-0 ">
+                <h1 class="ml-10  text-orange-950 text-xl underline">Bed-Room</h1>
+                <h3 >Lorem ipsum dolor sit amet <br> consectetur, adipisicing elit. </h3>
+              </div>
+              <div>
+                <img src="../img/f7956b561d5c86ad78c7f15865aa4258.jpg" alt="Image 4" class="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48  rounded-full object-cover ml-10 md:ml-0">
+                <h1 class="ml-10 text-orange-950 text-xl underline ">Dining-Room</h1>
+                <h3>Lorem ipsum dolor sit amet <br>consectetur, adipisicing elit. </h3>
+              </div>
+            </div>
             </section>
 
-            <section class="Project mt-28 bg-abir ">
-              <a name="Project"></a>
-             <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-  <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="../img/5e123327ec7cf9e9e26c641c04c434fd.jpg" alt="">
-  <div class="flex flex-col justify-between p-4 leading-normal">
-      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-  </div>
-</a>       
-</section> 
 
-<section class="About-us mt-28 bg-abir">
-  <a name="About-us"></a>
 
-  <div class="flex justify-center ">
-    <div class=" flex justify-centercol-span-12 sm:col-span-12 lg:col-span-6 gap-4 ">
-   <img src="../img/5e123327ec7cf9e9e26c641c04c434fd.jpg" alt="Image 2" class="w-36 h-40 object-cover rounded-lg">
-   <div class="text-center">
-    <h2 class="text-xl font-semibold mb-4">Titre de la description</h2>
-    <p class="text-sm">Voici une description qui se trouve au centre entre les deux images. Elle peut contenir du texte explicatif ou des informations supplémentaires.</p>
+
+            <section class="Category mt-14 ">
+              <a name="Category"></a>
+              <div class="row-auto">
+                <h2 class="text-center mt-12 text-4xl">Our Categories</h2>
+                <p class="text-center mt-12 mb-10 text-3xl"> Perfect Synergy Of Classic & Modern</p>
+              </div>
+
+
+              <div class="grid  grid-cols-1 sm:grid-cols-2 ">
+
+                <div class="col1 mr-11 rounded-lg">
+                <div class=" h-full w-80 bg-nude/55 rounded-lg">
+               <h2 class="text-xl text-center items-center text-slate-300">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eaque quis vitae eius earum tempore placeat distinctio! Totam quos voluptatibus dicta recusandae deserunt, dolores exercitationem dolorem at, architecto ex temporibus consectetur! </h2>
+              </div>
+            </div>
+                <div class="col2 rounded-lg">
+                <div class=" h-full w-80 bg-nude/55 rounded-lg">
+                <h2 class="text-xl text-slate-300 text-center items-center">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                  Ipsam ducimus, ea minus laudantium accusantium, 
+                  obcaecati animi laborum vitae ab corporis odit corrupti 
+                  debitis aliquid dolorem repellat! Id consequatur ipsa error? Lorem ipsum,
+                   dolor sit amet consectetur adipisicing elit.</h2>
+               </div>
+              </div>
+              </div>
+
+
+
+              </section> 
+
+
+
+
+
+
+  <section class="Latest-Posts">
+    <a name="Latest-Posts"></a>
+    <div class="row-auto">
+      <h2 class="text-center mt-12 mb-10 text-4xl">Let's See Together Our Projects </h2>
+    </div>
+  <div class="flex justify-start overflow-x-auto scroll-pl-6 snap-x space-x-10 mt-14 bg-nude ">
+    <div class="scroll snap-start shrink-0 ">
+      <img src="../img/ee65372b06608d96341e02325f1ff925.jpg" class=" rounded-lg w-full h-64 mt-11 ml-8" alt="Image 1"/>
+    <h1 class="text-center font-semibold ml-16">Stuning Living-Room</h1>
+    <h2 class="text-center  bg-paleoyster rounded-xl ml-16 mb-2">31/12/2024</h2>
+    </div>
+    <div class="scroll snap-start shrink-0 ">
+      <img src="../img/ee44534b3a29622e381388e0f4382776.jpg" class=" rounded-lg w-full h-64 mt-11 ml-8 " alt="Image 2"/>
+      <h1 class="text-center font-semibold ml-16">Art deco interior</h1>
+      <h2 class="text-center  bg-paleoyster rounded-xl ml-16 mb-2">15/07/2024</h2>
+    </div>
+    <div class="scroll snap-start shrink-0 ">
+      <img src="../img/eb2eba347bbbcdb98e3a87cb9c8f32ab.jpg" class=" rounded-lg w-full h-64 mt-11 ml-8 " alt="Image 3"/>
+      
+      <h1 class="text-center font-semibold ml-16">Luxury Living-Room</h1>
+   <h2 class="text-center bg-paleoyster rounded-xl ml-16 mb-2">01/06/2023</h2>
   </div>
-   <img src="../img/ae95291a0d158b01f1487d391866d438.jpg" alt="Image 3" class="w-36 h-40 object-cover rounded-lg">
+    <div class="scroll snap-start shrink-0 ">
+      <img src="../img/3f9930ac7d0ec8e83e9ab70c5d17465e.jpg" class=" rounded-lg w-full h-64 mt-11 ml-8" alt="Image 1"/>
+   <h1 class="text-center font-semibold ml-16">Modening Dining-Room</h1>
+   <h2 class="text-center  bg-paleoyster rounded-xl ml-16 mb-2">05/05/2022</h2>
   </div>
+    <div class="scroll snap-start shrink-0">
+      <img src="../img/76bb38658ae9aa1614339f4502346791.jpg" class=" rounded-lg w-full h-64 mt-11 ml-8 " alt="Image 1"/>
+    <h1 class="text-center font-semibold ml-16">Elegance Living-Room</h1>
+    <h2 class="text-center  bg-paleoyster rounded-xl ml-16 mb-2">01/03/2021</h2>
   </div>
+  <div class="scroll snap-start shrink-0">
+    <img src="../img/b119a561830acb51d35867469aa245a5.jpg" class=" rounded-lg w-full h-64 mt-11 ml-4 " alt="Image 1"/>
+  <h1 class="text-center font-semibold ml-16">Chic Dining-Room</h1>
+  <h2 class="text-center  bg-paleoyster rounded-xl ml-16 mb-2">15/2/2020</h2>
+</div>
+  </div>
+
 </section>
 
- <section class="Contact mt-28 bg-orange-700" >
+ <section class="Contact mt-14 " >
   <a name="Contact"></a>
+  <h1 class=" text-4xl text-center mb-10"> Contact-us</h1>
+  <div class="flex  justify-center">
   <form class="w-full max-w-sm">
     <div class="md:flex md:items-center mb-6">
       <div class="md:w-1/3">
@@ -143,7 +221,7 @@
         </label>
       </div>
       <div class="md:w-2/3">
-        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="Jane Doe">
+        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" placeholder="name">
       </div>
     </div>
     <div class="md:flex md:items-center mb-6">
@@ -168,32 +246,30 @@
     <div class="md:flex md:items-center">
       <div class="md:w-1/3"></div>
       <div class="md:w-2/3">
-        <button class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+        <button class="shadow bg-paleoyster hover:bg-amber-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
           Sign Up
         </button>
       </div>
     </div>
   </form>
- </section>           
-
-      
-
-        
+</div>
+ </section>   
+    
 
     </main>
-    <footer class=" bg-gray-800 text-white py-8 mt-28">
-      
-      <div class="container mx-auto px-6">
-        <div class="flex flex-col md:flex-row justify-between items-center">
-            <a class="fa fa-snapchat-ghost" target="_blank" href="https://www.snapchat.com/fr-FR"></a>
-            <a class="fa fa-instagram" target="_blank" href="https://www.instagram.com/"></a>
-            <a class="fa fa-facebook "target= "_blank" href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Dfr_FR"></a>
+    <footer class="container bg-stone-600 text-white  mt-14 flex flex-col md:flex-row-reverse place-content-around">
+<!--       
+      <div class="container mx-auto px-6"> -->
+        <div class="flex sm:flex-row justify-center md:justify-end">
+            <a class="fa fa-snapchat-ghost rounded-full mr-4" target="_blank" href="https://www.snapchat.com/fr-FR"></a>
+            <a class="fa fa-instagram rounded-full mr-4" target="_blank" href="https://www.instagram.com/"></a>
+            <a class="fa fa-facebook rounded-full"target="_blank" href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Dfr_FR"></a>
           </div>
-          <div class="col-sm-12 col-md-6 mt-2">
-        <p class="text-center mt-0 mt-md-4">&copy; 2024 [Deco & Lifestyle] . All rights reserved. </p>
-      </div>
-      </div>
-    </div>
+         
+        <p class=" mt-3 sm:text-center ml-10 md:text-start">&copy; 2025 [Deco & Lifestyle] . All rights reserved. </p>
+ 
+      <!-- </div> -->
+   
      
     </footer>
 </body>
